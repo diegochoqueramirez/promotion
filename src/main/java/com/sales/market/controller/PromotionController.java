@@ -17,6 +17,8 @@ public class PromotionController extends GenericController<Promotion, PromotionD
         this.service = service;
     }
 
+
+
     @Override
     protected GenericService getService() {
         return service;

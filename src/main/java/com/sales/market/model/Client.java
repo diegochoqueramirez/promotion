@@ -8,6 +8,7 @@ import java.time.LocalDate;
 @Entity
 public class Client extends ModelBase<ClientDto> {
     private String name;
+    private String email;
     private LocalDate birthday;
 
     public String getName() {
@@ -24,5 +25,13 @@ public class Client extends ModelBase<ClientDto> {
 
     public void setBirthday(LocalDate birthday) {
         this.birthday = birthday;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
